@@ -7,10 +7,9 @@
   <meta name="description" content="Yapay Zekâ Okulum - Eğitimde Yapay Zeka Uygulamaları ve Dijital Dönüşüm Atölyesi (5-9 Ocak 2025)" />
   <meta name="theme-color" content="#0ea5e9" />
 
-  <!-- Tailwind CDN (hızlı kurulum, prod için isterseniz build öneririm) -->
+  <!-- Tailwind CDN (hızlı kurulum) -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    // Küçük Tailwind config (özel renk)
     tailwind.config = {
       theme: {
         extend: {
@@ -112,6 +111,7 @@
           <h4 class="font-semibold">Repo</h4>
           <p class="text-sm text-slate-600">Tüm materyaller ve güncellemeler burada bulunur.</p>
           <a class="mt-3 inline-block text-yzo-500 font-medium" href="https://github.com/yapayzekaokulum/balikesirilmemyapayzeka" target="_blank">GitHub deposu →</a>
+          <div class="mt-3 text-sm text-slate-500">README (depo bilgileri): <a href="https://github.com/yapayzekaokulum/balikesirilmemyapayzeka/blob/e140af192e0d31a263bf12038ce65f2b77e96886/README.md" target="_blank" class="text-yzo-500">README.md</a></div>
         </div>
         <div class="bg-white p-5 rounded-xl shadow">
           <h4 class="font-semibold">İletişim & Destek</h4>
@@ -123,15 +123,65 @@
     <!-- Contact -->
     <section id="contact" class="mt-10 mb-12">
       <h3 class="text-2xl font-bold mb-4">İletişim</h3>
-      <div class="bg-white rounded-xl shadow p-6 md:flex md:items-center md:justify-between">
+      <div class="bg-white rounded-xl shadow p-6 grid md:grid-cols-2 gap-6">
         <div>
-          <p class="font-semibold">Yapay Zekâ Okulum (yapayzekaokulum)</p>
+          <p class="font-semibold text-lg">Yapay Zekâ Okulum (yapayzekaokulum)</p>
           <p class="text-sm text-slate-600">Daha fazla bilgi veya kurumsal talepler için repo üzerinden iletişime geçin.</p>
+          <div class="mt-4 grid gap-3">
+            <!-- Contact list with icons -->
+            <a href="https://yapayzekaokulum.com" target="_blank" class="flex items-center gap-3 text-slate-700 hover:text-yzo-500">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yzo-500" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2a10 10 0 100 20 10 10 0 000-20zM2 12h20M12 2c2.5 3 4 6.5 4 10s-1.5 7-4 10c-2.5-3-4-6.5-4-10s1.5-7 4-10z"/></svg>
+              <span class="text-sm">yapayzekaokulum.com</span>
+            </a>
+
+            <a href="mailto:yapayzekaokulum@gmail.com" class="flex items-center gap-3 text-slate-700 hover:text-yzo-500">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yzo-500" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l8.5 6L20 8M21 6v10a2 2 0 01-2 2H5a2 2 0 01-2-2V6"/></svg>
+              <span class="text-sm">yapayzekaokulum@gmail.com</span>
+            </a>
+
+            <a href="https://wa.me/905077501982" target="_blank" class="flex items-center gap-3 text-slate-700 hover:text-yzo-500">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yzo-500" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 10-9 9c1.6 0 3.1-.4 4.4-1.1L23 21l-1.1-3.6A8.9 8.9 0 0021 12zM16.5 11.2a2.5 2.5 0 11-3.5-3.5 2.5 2.5 0 013.5 3.5z"/></svg>
+              <span class="text-sm">+90 507 750 19 82</span>
+            </a>
+
+            <a href="tel:+905077501982" class="flex items-center gap-3 text-slate-700 hover:text-yzo-500">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yzo-500" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M22 16.92V21a1 1 0 01-1.11 1 19.86 19.86 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.86 19.86 0 013 3.11 1 1 0 014 2h4.09a1 1 0 01.98.82c.2 1.1.7 2.14 1.42 3.07a1 1 0 01.11 1l-1.2 1.2a16 16 0 006 6l1.2-1.2a1 1 0 011-.11c.93.72 1.97 1.22 3.07 1.42a1 1 0 01.82.98z"/></svg>
+              <span class="text-sm">0507 750 19 82</span>
+            </a>
+
+            <a href="https://www.instagram.com/yapayzekaokulum" target="_blank" class="flex items-center gap-3 text-slate-700 hover:text-yzo-500">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yzo-500" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="18" height="18" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><path d="M17.5 6.5h.01"/></svg>
+              <span class="text-sm">@yapayzekaokulum</span>
+            </a>
+
+            <a href="https://www.linkedin.com/company/102219192/" target="_blank" class="flex items-center gap-3 text-slate-700 hover:text-yzo-500">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yzo-500" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-14h4v2a4 4 0 014-2z"/><rect x="2" y="9" width="4" height="11" rx="1" ry="1"/><circle cx="4" cy="4" r="2"/></svg>
+              <span class="text-sm">YapayzekaOkulum</span>
+            </a>
+
+            <a href="https://www.youtube.com/results?search_query=yapayzekaokulum" target="_blank" class="flex items-center gap-3 text-slate-700 hover:text-yzo-500">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yzo-500" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><path d="M9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+              <span class="text-sm">YouTube — YapayzekaOkulum</span>
+            </a>
+
+            <a href="https://github.com/yapayzekaokulum" target="_blank" class="flex items-center gap-3 text-slate-700 hover:text-yzo-500">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yzo-500" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.71-2.78.61-3.37-1.2-3.37-1.2-.46-1.17-1.12-1.48-1.12-1.48-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.54 2.36 1.1 2.94.84.09-.66.35-1.1.63-1.35-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 012.5-.34c.85 0 1.71.12 2.5.34 1.9-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.93.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .26.18.58.69.48A10 10 0 0022 12c0-5.52-4.48-10-10-10z"/></svg>
+              <span class="text-sm">GitHub — @yapayzekaokulum</span>
+            </a>
+
+          </div>
         </div>
-        <div class="mt-4 md:mt-0">
-          <a href="https://github.com/yapayzekaokulum" target="_blank" class="inline-flex items-center gap-2 bg-slate-100 hover:bg-slate-200 border rounded-lg px-4 py-2">
-            GitHub Profil →
-          </a>
+
+        <div>
+          <h4 class="font-semibold mb-2">Hızlı Bilgiler</h4>
+          <ul class="text-sm text-slate-600 space-y-2">
+            <li><strong>Web:</strong> yapayzekaokulum.com</li>
+            <li><strong>E-posta:</strong> yapayzekaokulum@gmail.com</li>
+            <li><strong>Telefon:</strong> 0507 750 19 82</li>
+            <li><strong>WhatsApp:</strong> +90 507 750 19 82</li>
+          </ul>
+
+          <div class="mt-4 text-sm text-slate-500">Depo README: <a href="https://github.com/yapayzekaokulum/balikesirilmemyapayzeka/blob/e140af192e0d31a263bf12038ce65f2b77e96886/README.md" target="_blank" class="text-yzo-500">README.md</a></div>
         </div>
       </div>
     </section>
