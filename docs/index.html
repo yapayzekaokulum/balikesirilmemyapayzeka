@@ -1,62 +1,152 @@
 <!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Eğitimde Yapay Zeka Uygulamaları ve Dijital Dönüşüm - Balıkesir</title>
-  <link rel="stylesheet" href="./styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eğitimde Yapay Zeka Uygulamaları — Yapay Zekâ Okulum</title>
+  <meta name="description" content="Yapay Zekâ Okulum - Eğitimde Yapay Zeka Uygulamaları ve Dijital Dönüşüm Atölyesi (5-9 Ocak 2025)" />
+  <meta name="theme-color" content="#0ea5e9" />
+
+  <!-- Tailwind CDN (hızlı kurulum, prod için isterseniz build öneririm) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Küçük Tailwind config (özel renk)
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            yzo: {
+              50: '#f8feff',
+              100: '#e6fbff',
+              300: '#7fe0ff',
+              500: '#0ea5e9',
+              700: '#0573a6'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="./styles.css" />
 </head>
-<body>
-  <header class="site-header">
-    <div class="container">
-      <h1>Eğitimde Yapay Zeka Uygulamaları ve Dijital Dönüşüm Atölyesi</h1>
-      <p class="subtitle">Balıkesir İl MEM — 5–9 Ocak 2025</p>
+<body class="bg-gray-50 text-slate-800 antialiased">
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-yzo-500 to-sky-400 text-white">
+    <div class="max-w-6xl mx-auto px-6 py-6 flex items-center gap-4">
+      <img src="./logo.png" alt="Yapay Zekâ Okulum Logo" class="h-16 w-auto rounded-md bg-white/10 p-2" />
+      <div class="flex-1">
+        <h1 class="text-xl font-semibold">Eğitimde Yapay Zeka Uygulamaları ve Dijital Dönüşüm</h1>
+        <p class="text-sm opacity-90">yapayzekaokulum — 5–9 Ocak 2025</p>
+      </div>
+      <nav class="hidden md:flex gap-4 items-center">
+        <a href="#about" class="hover:underline">Hakkında</a>
+        <a href="#program" class="hover:underline">Program</a>
+        <a href="#resources" class="hover:underline">Kaynaklar</a>
+        <a href="#contact" class="hover:underline">İletişim</a>
+      </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <h2>Hakkında</h2>
-      <p>Bu eğitim; eğitimciler ve yöneticilere yönelik, yapay zekânın eğitimde uygulanması ve dijital dönüşüm süreçleri hakkında uygulamalı bir atölye programıdır. İçerik planlaması, öğretim materyali üretimi ve araç seçimi üzerine odaklanır.</p>
-      <p>Repo açıklaması: "Eğitim Adı: Eğitimde Yapay Zeka Uygulamaları ve Dijital Dönüşüm Atölyesi Tarih: 5 – 9 Ocak 2025 Balıkesir İl MEM"</p>
+  <!-- Hero -->
+  <main class="max-w-6xl mx-auto px-6 py-12">
+    <section class="bg-white rounded-2xl shadow-lg p-8 md:p-12 grid gap-6 md:grid-cols-2 items-center">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Eğitimde Yapay Zeka ve Dijital Dönüşüm</h2>
+        <p class="text-slate-600 mb-6">Eğitimciler ve yöneticiler için uygulamalı atölye: araç seçimi, içerik üretimi ve dönüşüm stratejileri. Beş günlük yoğun program ile pratik bilgi ve sertifika.</p>
+        <div class="flex gap-3">
+          <a href="#program" class="inline-flex items-center gap-2 bg-yzo-500 hover:bg-yzo-700 text-white font-semibold px-4 py-2 rounded-lg shadow">Programı Gör →</a>
+          <a href="https://github.com/yapayzekaokulum/balikesirilmemyapayzeka" target="_blank" class="inline-flex items-center gap-2 border border-slate-200 hover:bg-slate-50 px-4 py-2 rounded-lg">Repo'yu Gör</a>
+        </div>
+      </div>
+      <div class="order-first md:order-last">
+        <img src="./logo.png" alt="YZO Logo büyük" class="w-56 mx-auto md:ml-auto md:mr-0" />
+      </div>
     </section>
 
-    <section>
-      <h2>İçerik Özetleri</h2>
-      <ul>
-        <li>Yapay Zeka kavramları ve etik kullanım</li>
-        <li>Eğitimde yapay zekâ araçlarının seçimi ve kullanımı</li>
-        <li>Dijital dönüşüm stratejileri ve uygulama örnekleri</li>
-        <li>Uygulamalı atölye çalışmaları</li>
-      </ul>
+    <!-- Highlights -->
+    <section id="about" class="mt-10">
+      <h3 class="text-2xl font-bold mb-4">Neler Öğreneceksiniz</h3>
+      <div class="grid gap-4 md:grid-cols-3">
+        <div class="bg-white p-5 rounded-xl shadow">
+          <h4 class="font-semibold mb-2">Yapay Zeka Temelleri</h4>
+          <p class="text-sm text-slate-600">Temel kavramlar, model türleri ve eğitimde kullanım senaryoları.</p>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow">
+          <h4 class="font-semibold mb-2">Etik & Güvenlik</h4>
+          <p class="text-sm text-slate-600">Gizlilik, önyargı ve güvenli kullanım ilkeleri.</p>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow">
+          <h4 class="font-semibold mb-2">Uygulamalı Atölye</h4>
+          <p class="text-sm text-slate-600">Araçlarla pratik uygulamalar ve materyal üretimi.</p>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>Program ve Takvim (Örnek)</h2>
-      <ol>
-        <li>Gün 1: Yapay zekâ temel kavramları ve eğitimde kullanımı</li>
-        <li>Gün 2: Araç tanıtımı ve materyal üretimi</li>
-        <li>Gün 3: Uygulamalı atölye çalışmaları</li>
-        <li>Gün 4: Değerlendirme ve takip stratejileri</li>
-        <li>Gün 5: Sunumlar ve sertifika işlemleri</li>
-      </ol>
+    <!-- Program -->
+    <section id="program" class="mt-10">
+      <h3 class="text-2xl font-bold mb-4">Program — Örnek Takvim</h3>
+      <div class="grid gap-4 md:grid-cols-3">
+        <article class="bg-white p-5 rounded-xl shadow">
+          <h5 class="font-semibold mb-2">Gün 1</h5>
+          <p class="text-sm text-slate-600">Yapay zekâ temel kavramları ve eğitimde kullanımı.</p>
+        </article>
+        <article class="bg-white p-5 rounded-xl shadow">
+          <h5 class="font-semibold mb-2">Gün 2</h5>
+          <p class="text-sm text-slate-600">Araç tanıtımı ve öğretim materyali üretimi.</p>
+        </article>
+        <article class="bg-white p-5 rounded-xl shadow">
+          <h5 class="font-semibold mb-2">Gün 3-5</h5>
+          <p class="text-sm text-slate-600">Uygulamalı atölyeler, değerlendirme ve sunumlar.</p>
+        </article>
+      </div>
     </section>
 
-    <section>
-      <h2>Kaynaklar</h2>
-      <p>Proje deposu: <a href="https://github.com/yapayzekaokulum/balikesirilmemyapayzeka">yapayzekaokulum/balikesirilmemyapayzeka</a></p>
+    <!-- Resources -->
+    <section id="resources" class="mt-10">
+      <div class="flex items-center justify-between">
+        <h3 class="text-2xl font-bold">Kaynaklar</h3>
+      </div>
+      <div class="mt-4 grid gap-4 md:grid-cols-2">
+        <div class="bg-white p-5 rounded-xl shadow">
+          <h4 class="font-semibold">Repo</h4>
+          <p class="text-sm text-slate-600">Tüm materyaller ve güncellemeler burada bulunur.</p>
+          <a class="mt-3 inline-block text-yzo-500 font-medium" href="https://github.com/yapayzekaokulum/balikesirilmemyapayzeka" target="_blank">GitHub deposu →</a>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow">
+          <h4 class="font-semibold">İletişim & Destek</h4>
+          <p class="text-sm text-slate-600">Sorularınız için repo üzerinden issue açabilirsiniz.</p>
+        </div>
+      </div>
     </section>
 
-    <section class="contact">
-      <h2>İletişim</h2>
-      <p>Repo sahibi: <strong>yapayzekaokulum</strong></p>
-      <p>Daha fazla bilgi veya değişiklik talepleri için repo üzerinden issue açabilirsiniz.</p>
+    <!-- Contact -->
+    <section id="contact" class="mt-10 mb-12">
+      <h3 class="text-2xl font-bold mb-4">İletişim</h3>
+      <div class="bg-white rounded-xl shadow p-6 md:flex md:items-center md:justify-between">
+        <div>
+          <p class="font-semibold">Yapay Zekâ Okulum (yapayzekaokulum)</p>
+          <p class="text-sm text-slate-600">Daha fazla bilgi veya kurumsal talepler için repo üzerinden iletişime geçin.</p>
+        </div>
+        <div class="mt-4 md:mt-0">
+          <a href="https://github.com/yapayzekaokulum" target="_blank" class="inline-flex items-center gap-2 bg-slate-100 hover:bg-slate-200 border rounded-lg px-4 py-2">
+            GitHub Profil →
+          </a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© Yapay Zeka Okulum— Eğitim: 5–9 Ocak 2025 Balıkesir İl MEM</p>
+  <!-- Footer -->
+  <footer class="bg-white border-t">
+    <div class="max-w-6xl mx-auto px-6 py-6 text-sm text-slate-600">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-3">
+        <div>© yapayzekaokulum — Eğitim: 5–9 Ocak 2025</div>
+        <div class="flex gap-3">
+          <a href="#program" class="hover:underline">Program</a>
+          <a href="#resources" class="hover:underline">Kaynaklar</a>
+        </div>
+      </div>
     </div>
   </footer>
 </body>
