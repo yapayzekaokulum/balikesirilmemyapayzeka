@@ -84,7 +84,3 @@ Odak: Ürün ortaya koyma, sunum ve genel değerlendirme.
 ## Gereksinimler
 - Katılımcıların kendi dizüstü bilgisayarları ile gelmeleri gerekmektedir.
 - Google hesabı ve temel dijital okuryazarlık becerisi ön koşuldur.
-
----
-
-Not: İçeriği isterseniz kısa bir PDF program broşürü veya ders slaytları olarak da hazırlayıp depoya ekleyebilirim.
