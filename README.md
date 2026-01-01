@@ -41,7 +41,7 @@ Siz de katkıda bulunmak isterseniz uygun klasöre dosya ekleyebilir veya önce 
 
 ## Lisans
 
-Bu depo için varsayılan lisans: MIT (Gerekirse değiştirilebilir).
+Bu depo için varsayılan lisans: MIT
 
 ---
 
